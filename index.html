@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burn House</title>
+    <!-- goggle font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+   <!-- font awesome cdn -->
+   <script src="https://kit.fontawesome.com/15717b909b.js" crossorigin="anonymous"></script>
+   <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
-<body>
+<body class=" bg-gradient-to-b from-gray-100 to-white">
+    <header class="max-w-screen-lg mx-auto my-6 mt-12 ">
+        <nav class="flex lg:flex justify-between items-center">
+            <h1 class="text-3xl text-[#212121] font-bold flex items-center">
+                <i class="p-2 -rotate-45 rounded-full bg-lime-400 fa-solid fa-arrow-right mr-2"></i> Rinterio
+            </h1>
+            <ul class=" lg:flex gap-6 ml-20">
+                <i class="lg:hidden p-3 border border-[#E9E9E9] rounded-full fa-solid fa-bars"></i>
+                <li class="font-bold text-[#737373] text-base" >Home</li>
+                <li class="text-[#737373] text-base ">Services</li>
+                <li class="text-[#737373] text-base">Portfolio</li>
+                <li class="text-[#737373] text-base">Blogs</li>
+                <li class="text-[#737373] text-base">Contact Us</li>
+            </ul>
+            <div class="flex items-center gap-4">
+                <button><i class="p-3 border border-[#E9E9E9] rounded-full bg-white fa-solid fa-magnifying-glass"></i></button>
+                <button><i class="p-3 border border-[#E9E9E9] rounded-full fa-solid fa-cart-shopping"></i></button>
+                <button class="px-6 py-2 rounded-full text-md text-black font-bold bg-lime-300 flex items-center">
+                    Book Consult <i class="p-2 bg-[#1C1C1C] rounded-full -rotate-45 text-white fa-solid fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- banner part -->
+        <div class="mt-16 ">
+            <img class="mx-auto" src="assets/banner.png" alt="">
+        </div>
+        <div class="justify-center items-center  mt-10 text-center space-y-8">
+            <h1 class="text-5xl text-[#212121] font-extrabold mx-auto">A barn house of this design has a <br> striking appearance</h1>
+            <p class="text-sm text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+            <button class="px-6 py-2 rounded-full text-md text-black font-bold bg-[#ABEF5F80] ">
+                View Details <i class="p-2 bg-[#ABEF5F] rounded-full -rotate-45 text-[#1C1C1C] fa-solid fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </header>
+    <!-- main part -->
+    <main class="w-full h-auto bg-gradient-to-b from-gray-300 to-white">  
+        <section></section>
+        <!-- second part -->
+        <section>
+            <h3><i class="fa-solid fa-arrow-right ml-2"></i>How we works</h3>
+            <h1>Our Works Process</h1>
+            <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <div class="grid grid-cols-4">
+                <div>
+                    <img src="" alt="">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <section></section>
+    </main> 
+    <!-- footer design -->
+    <footer class="h-full w-full bg-black flex justify-center items-center">
+        <div class="flex flex-col items-center justify-center text-center space-y-12"> <!-- Increased spacing between items -->
+            <h1 class="text-2xl text-[#E9E9E9] font-semibold flex items-center mt-16">
+                <i class="p-1 -rotate-45 rounded-full bg-lime-400 fa-solid fa-arrow-right mr-2"></i> Rinterio
+            </h1>
+            <p class="w-[50%] text-[#737373] text-sm mt-4"> 
+                Burn House is dedicated to providing innovative solutions and support in the realm of community development. Established in 2010, we have been at the forefront of creating impactful programs and services that foster growth and connection. Our vision is to empower individuals and communities to achieve their full potential, and we invite you to explore our initiatives and join us in making a meaningful difference.
+            </p>
+            <ul class="lg:flex lg:flex-grow  justify-around w-full lg:w-[60%] space-x-24 mt-4">
+                <li class="font-bold text-[#E9E9E9] text-base">Home</li>
+                <li class="text-[#E9E9E9] text-base">Services</li>
+                <li class="text-[#E9E9E9] text-base">Portfolio</li>
+                <li class="text-[#E9E9E9] text-base">Blogs</li>
+                <li class="text-[#E9E9E9] text-base">Contact Us</li>
+            </ul>
+            <button class="px-5 py-2 rounded-full text-md text-black font-bold bg-lime-300 flex items-center mt-8"> <!-- Added top margin -->
+                Book Consult <i class="p-2 bg-black rounded-full -rotate-45 text-white fa-solid fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </footer>
     
 </body>
 </html>
