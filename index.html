@@ -20,7 +20,16 @@
             <h1 class="text-3xl text-[#212121] font-bold flex items-center ">
                 <i class="p-2 -rotate-45 rounded-full bg-lime-400 fa-solid fa-arrow-right mr-2"></i> Rinterio
             </h1>
-            <ul class="lg:flex gap-6 hidden">
+            <!-- hamburger icon -->
+            <div class="flex items-center">
+                <button id="hamburger" class="lg:hidden p-3 border border-[#E9E9E9] rounded-full bg-white flex flex-col justify-between w-10 h-10 focus:outline-none">
+                  <span class="block w-full h-0.5 bg-gray-800"></span>
+                  <span class="block w-full h-0.5 bg-gray-800"></span>
+                  <span class="block w-full h-0.5 bg-gray-800"></span>
+                </button>
+              </div>
+            
+            <ul class="hidden lg:flex gap-6 hidden">
                 <li class="font-bold text-[#737373] text-base">Home</li>
                 <li class="text-[#737373] text-base">Services</li>
                 <li class="text-[#737373] text-base">Portfolio</li>
@@ -59,7 +68,7 @@
             <div class="w-[20%] gap-4 grid mt-8">
                 <div class="ml-20 items-center space-x-4">
                     <img class="hidden lg:block lg:w-20 lg:h-12 mt-6" src="assets/Vector.png" alt="">
-                    <h2 class="mt-2 text-lg w-full md:w-[50%] lg:w-[75%] font-semibold flex items-center text-center justify-center border border-2 rounded-full bg-white mx-auto whitespace-nowrap">
+                    <h2 class="mt-2 text-lg w-full lg:w-[75%] font-semibold flex items-center text-center justify-center border border-2 rounded-full bg-white mx-auto whitespace-nowrap">
                         <i class="p-2 sm:p-1 rounded-full text-[#1C1C1C] fa-solid fa-arrow-right"></i>
                         About Us
                     </h2>    
@@ -104,9 +113,9 @@
             </div>
        
             <!-- Second Part Start from Main Section -->
-            <div class="items-center text-center">
+            <div class="items-center text-center ">
                 <div>
-                    <h2 class="text-lg w-[40%] -mt-6 lg:w-[15%] font-semibold flex items-center justify-center border border-2 rounded-full bg-white mx-auto">
+                    <h2 class="text-lg w-[70%]  mt-6 lg:w-[15%] font-semibold flex items-center justify-center border border-2 rounded-full bg-white mx-auto">
                         <i class="p-2 md:p-4 rounded-full text-[#1C1C1C] fa-solid fa-arrow-right"></i>
                         How it Works
                     </h2>
@@ -118,7 +127,7 @@
                     featuring weathered wood, sleek metal accents.
                 </p>
             
-                <div class="w-[80%] mx-auto mt-6 mb-12 ">
+                <div class="w-[80%] mx-auto mt-6 mb-6 ">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <!-- Concept Section -->
                         <div class="bg-[#E7C1D3] rounded-lg p-6 text-left flex flex-col items-start space-y-4">
@@ -217,44 +226,87 @@
   </div>
   </section>
 
-  <!-- calculation part -->
-  <section class="max-w-screen-2xl bg-none mx-auto mt-4">
-    <div class="bg-cover bg-center h-screen" style="background-image: url('assets/bg.jpg');">
-        <div class="flex flex-col items-center justify-center h-full space-y-6">
-            <!-- Let’s Connect Button -->
-            <h2 class="text-lg w-[40%] lg:w-auto text-[#494949] font-bold flex items-center justify-center border border-2 rounded-full bg-[#ABEF5F33] px-6 py-1">
-                <i class="p-0 md:p-4 rounded-full text-[#1C1C1C] fa-solid fa-arrow-right"></i>
-                Let’s Connect
+<!-- own section -->
+<section class="w-[80%] mx-auto bg-slate-100">
+    <div class="flex flex-col items-center text-center ">
+        <div class="w-full ">
+            <h2 class="text-base w-full mt-8 lg:w-[25%]  font-semibold flex items-center justify-center border border-2 rounded-full bg-gray-200 mx-auto">
+                <i class="p-2 md:p-4 rounded-full text-[#1C1C1C] fa-solid fa-arrow-right -ml-2"></i>
+                Meet Our Team
             </h2>
-            <!-- Title -->
-            <h1 class="text-4xl font-bold text-[#212121] text-center">
-                Let’s Discuss Next Project
-            </h1>
-            <!-- Description -->
-            <p class="text-center text-sm font-medium text-[#494949] max-w-screen-md">
-                The barn house captivates with its blend of rustic charm and modern sophistication,<br>
-                featuring weathered wood, sleek metal accents.
-            </p>
-            <!-- Form (Example) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-screen-md">
-                <input type="text" placeholder="First Name*" class="rounded-full p-3 border border-gray-300 focus:outline-none">
-                <input type="text" placeholder="Last Name*" class="rounded-full p-4 border border-gray-300 focus:outline-none">
-                <input type="text" placeholder="Phone Number*" class="rounded-full p-4 border border-gray-300 focus:outline-none">
-                <input type="email" placeholder="Email Address*" class="rounded-full p-4 border border-gray-300 focus:outline-none">
-            </div>
-            <!-- Text Area -->
-            <div class="w-full max-w-screen-md mt-4">
-                <textarea placeholder="Write your message here." class="rounded-3xl p-6 w-full h-36 border border-gray-300 focus:outline-none"></textarea>
-            </div>
         </div>
+
+        <h2 class="font-bold text-3xl text-[#494949] mt-6 ">Meet the Team</h2>
+        <p class="w-[90%]  lg:w-[50%] mt-4 text-[#494949] text-sm">
+            Our dedicated team is at the heart of everything we do. Get to know the passionate individuals who work tirelessly to provide support and services to those affected by fire incidents.
+        </p>
     </div>
+    <div class="w-full lg:w-[80%] mt-12 mx-auto">
+        <div class="lg:flex justify-between gap-6">
+          <div class="w-full lg:w-[32%] space-y-4">
+            <img src="assets/img33.jpeg" alt="Anu Bharadwaj" class="w-full h-auto object-cover rounded-md">
+            <h2 class="text-[#494949] font-extrabold text-lg text-center">Anu Bharadwaj</h2>
+            <p class="text-[#494949] text-sm leading-relaxed text-center">
+              Anu Bharadwaj is an integral part of our team, serving as our dedicated Assistant. With a background in administrative support and a passion for community service, Anu ensures the smooth operation of our daily activities.
+            </p>
+          </div>
+          <div class="w-full lg:w-[32%] space-y-4">
+            <img src="assets/img11.jpeg" alt="Mike Cannon-Brookes" class="w-full h-auto object-cover rounded-md">
+            <h2 class="text-[#494949] font-extrabold text-lg text-center">Mike Cannon-Brookes</h2>
+            <p class="text-[#494949] text-sm leading-relaxed text-center">
+              Mike Cannon-Brookes, our dedicated Assistant, brings a wealth of experience in operations and coordination. His commitment and expertise ensure our team runs smoothly and effectively.
+            </p>
+          </div>
+          <div class="w-full lg:w-[32%] space-y-4">
+            <img src="assets/img22.jpg" alt="Scott Farquhar" class="w-full h-auto object-cover rounded-md">
+            <h2 class="text-[#494949] font-extrabold text-lg text-center">Scott Farquhar</h2>
+            <p class="text-[#494949] text-sm leading-relaxed text-center">
+              Scott Farquhar, our Assistant, is instrumental in managing daily tasks and supporting our team with exceptional efficiency. His dedication ensures our operations are seamless and effective.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      
 </section>
 
 
 
 
+<!-- calculation part -->
+<section class="w-full lg:w-full bg-none mx-auto lg:mt-4 px-4 mb-8">
+    <div class="bg-cover bg-center h-auto overflow-hidden" style="background-image: url('assets/bg.jpg');">
+        <div class="flex flex-col items-center justify-center h-full space-y-6 mb-8 mt-8">
 
-    </main>
+            <h2 class="text-lg w-[70%] lg:w-auto text-[#494949] font-bold flex items-center justify-center border border-2 rounded-full bg-[#ABEF5F33] px-6 py-1">
+                <i class="p-0 md:p-4 rounded-full text-[#1C1C1C] fa-solid fa-arrow-right"></i>
+                Let’s Connect
+            </h2>
+            <h1 class="text-2xl lg:text-4xl font-bold text-[#212121] text-center">
+                Let’s Discuss Next Project
+            </h1>
+            <p class="w-auto text-center text-sm font-medium text-[#494949] max-w-screen-md px-4">
+                The barn house captivates with its blend of rustic charm and modern sophistication,<br>
+                featuring weathered wood, sleek metal accents.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-screen-md">
+                <input type="text" placeholder="First Name*" class="rounded-full p-3 border border-gray-300 focus:outline-none">
+                <input type="text" placeholder="Last Name*" class="rounded-full p-3 border border-gray-300 focus:outline-none">
+                <input type="text" placeholder="Phone Number*" class="rounded-full p-3 border border-gray-300 focus:outline-none">
+                <input type="email" placeholder="Email Address*" class="rounded-full p-3 border border-gray-300 focus:outline-none">
+            </div>
+            <!-- Text Area -->
+            <div class="w-full max-w-screen-md mt-4">
+                <textarea placeholder="Write your message here." class="rounded-3xl p-4 w-full h-32 border border-gray-300 focus:outline-none"></textarea>
+            </div>
+            <!-- Send Email Button -->
+            <button class="w-[80%] lg:w-[57%] px-4 py-2 rounded-full text-md text-black font-bold bg-[#ABEF5F] mb-26">
+                Send Email <i class="p-2 bg-black rounded-full -rotate-45 text-white fa-solid fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </div>
+</section>
+</main>
     
     
 <!-- Footer Design -->
